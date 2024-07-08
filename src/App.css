@@ -1,38 +1,63 @@
+/* App.css */
 .App {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #c9cec9;
+}
+
+.header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #dddfe2;
+  padding: 10px 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.content {
+  background-color: #ffffff;
+  border: 1px solid #dddfe2;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+  min-height: 80vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  color: #6e767d;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.addButton {
+  margin-left: "3rem";
+}
+
+.todo-item {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  margin-bottom: 8px; /* Adjust margin between each todo item */
 }
 
-.App-link {
-  color: #61dafb;
+.todo-item-text {
+  flex: 1; /* Allow the text to take up remaining space */
+  padding-right: 10px; /* Adjust padding between text and button */
+  font-size: 16px; /* Example font size adjustment */
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-item-btn {
+  font-size: 14px;
+}
+
+.add-todo-input {
+  padding: 10px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.add-todo-button {
+  padding: 10px 20px;
+  font-size: 16px;
 }
